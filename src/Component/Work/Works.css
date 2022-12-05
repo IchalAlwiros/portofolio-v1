@@ -1,0 +1,139 @@
+.works{
+    padding: 0 30rem 0 20rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 4rem;
+    /* background: red; */
+}
+
+
+/* Right Content */
+.w-right {
+    position: relative;
+  }
+  
+  .w-mainCircle {
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+    /* darkMode */
+    z-index: 2;
+  }
+  .w-mainCircle > * {
+    position: absolute;
+  }
+  /* .w-mainCircle > :nth-child(1) {
+    top: -3rem;
+    left: 6rem;
+  } */
+  .w-mainCircle > :nth-child(1) {
+    left: -2rem;
+    top: 0rem;
+  }
+  .w-mainCircle > :nth-child(2) {
+    left: 6rem;
+    top: 6rem;
+  }
+  .w-mainCircle > :nth-child(3) {
+    left: 14rem;
+    top: 0rem;
+  }
+  .w-mainCircle > :nth-child(4) {
+    left: 6rem;
+    top: 14rem;
+  }
+
+  .w-secCircle {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: "none";
+    box-shadow: var(--smboxShadow);
+    background: white;
+  }
+
+  .w-secCircle > img {
+    transform: scale(0.6);
+  }
+
+  .w-secCircle > span {
+    color: red;
+    font-weight: 500;
+    font-size: 13px;
+    position: absolute;
+    top: -30px;
+    animation: blinker 1s linear infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .w-backCircle {
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    /* darkMode */
+    z-index: 1;
+  }
+
+  .blueCircle {
+    background: #1e96fc;
+    left: 18rem;
+    top: 0rem;
+  }
+  .yellowCircle {
+    background: #ffd60a;
+    left: 5rem;
+    top: 8rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    .works {
+      padding: 0rem 2.5rem;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+      
+      /* background: red; */
+    }
+
+    .w-button{
+      width: 50%;
+      margin: 20px auto;
+    }
+
+   
+    .w-right{
+      display: flex;
+      align-items: flex-start;
+      justify-content: start;
+      transform: scale(0.7);
+      margin-top: 80px;
+      margin-bottom: 0;
+    }
+
+    .w-mainCircle{
+      position: static;
+    }
+    .w-backCircle{
+      left: 8rem !important;
+    }
+    .yellowCircle {
+      background: #ffd60a;
+      top: 6rem;
+    }
+  
+  }
