@@ -59,7 +59,7 @@
 
   .i-icons a>*{
     transform: scale(1.2);
-    margin: 55px 40px 0 0;
+    margin: 70px 40px 0 0;
     height: 35px;
     width: 35px;
   }
@@ -127,6 +127,8 @@
     }
 
     .i-right {
+      margin-top: 50%;
+      /* margin-bottom: 50%; */
       transform:scale(0.8) ;
       left: -3rem;
     }
